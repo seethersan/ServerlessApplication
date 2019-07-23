@@ -11,3 +11,4 @@ phases:
     commands:
       - aws cloudformation deploy --template-file serverless-output.yaml --stack-name StudentsAppStack-Automated
       - aws cloudformation wait stack-create-complete --stack-name StudentsAppStack-Automated
+      - aws dynamodb batch-write-item --request-items file://Students.json
