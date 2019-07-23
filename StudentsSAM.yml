@@ -12,7 +12,7 @@ Resources:
       Description: manage Students table
       MemorySize: 128
       Timeout: 10
-      Role: 'arn:aws:iam::993969517672:role/LambdaDynamoDBReadAccess'
+      Role: arn:aws:iam::993969517672:role/LambdaDynamoDBReadAccess
       
   Students:
     Type: AWS::DynamoDB::Table
